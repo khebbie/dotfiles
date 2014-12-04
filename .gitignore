@@ -1,0 +1,37 @@
+# Ignore everything
+*
+
+# But not these files...
+!.*
+.zsh_history
+.bash_history
+.vimbackup/*
+.vimswap/*
+.DS_Store
+.trash/*
+.CFUserTextEncoding
+.NERDTreeBookmarks
+.cask
+.dbshell
+.guard_history
+.ido.last
+.irb_history
+.lesshst
+.meteorsession
+.netrc
+.nvimlog
+.nviminfo
+.pgadmin_histoqueries
+.pgpass
+.*history
+.erlang.cookie
+.recentf
+.trc
+.vagrant.d/
+.zcompdump*
+.zsh-update
+.config/
+.exercism.go
+.rbenv
+.tugboat
+.vim.20140808_1407483885/.netrwhist

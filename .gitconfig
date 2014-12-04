@@ -1,0 +1,54 @@
+[user]
+	name = Klaus Hebsgaard
+	email = klaus@hebsgaard.dk
+[alias]
+  co = checkout
+  aa = add --all .
+  br = branch
+  cl = clone
+  ci = commit
+  fu = reset --hard
+  # Log display from screencast, with train tracks.
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+  # Alternate log display from Scott Chacon
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  # Other useful aliases:
+  unstage = reset HEAD
+  staged = diff --cached
+  unstaged = diff
+  current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+  # Usage: git track origin/feature-123-login-form
+  track = checkout -t
+[apply]
+  whitespace = warn
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
+[push]
+  # Only push branches that have been set up to track a remote branch.
+	default = upstream
+[diff]
+    tool = p4merge
+[difftool "p4merge"]
+    cmd = "p4merge.exe $LOCAL $REMOTE"
+[merge]
+    tool = p4merge
+[mergetool "p4merge"]
+    cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
+    trustExitCode = true
+    keepBackup = false
+[core]
+	editor = vim
+	excludesfile = /Users/khebbie/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

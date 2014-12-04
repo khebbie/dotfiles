@@ -1,0 +1,7 @@
+syntax: glob
+
+*~
+.DS_Store
+erd.pdf
+rails_best_practices_output.html
+.vagrant/*
