@@ -1,6 +1,5 @@
 set shortmess=a
 set cmdheight=2
-let mapleader=" "
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>e :e
@@ -18,17 +17,16 @@ nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>l <C-w>l
- 
+
 nnoremap <Leader>H <C-w>H
 nnoremap <Leader>J <C-w>J
 nnoremap <Leader>K <C-w>K
 nnoremap <Leader>L <C-w>L
- 
+
 nnoremap <Leader>, 2<C-w><
 nnoremap <Leader>. 2<C-w>>
 nnoremap <Leader>- 2<C-w>-
 nnoremap <Leader>= 2<C-w>+
- 
 nnoremap <esc> :noh<return><esc>
 set tabstop=2
 set shiftwidth=2
@@ -44,3 +42,6 @@ let g:spf13_no_autochdir = 1
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 map <D-n> :NERDtree<CR>
+
+:nmap <F1> :echo<CR>
+:imap <F1> <C-o>:echo<CR>
