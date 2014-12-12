@@ -33,7 +33,7 @@ set shiftwidth=2
 set expandtab
 set linespace=4
 set shortmess=a
-nnoremap <Space><Space> <c-^>
+nnoremap <Space><leader> <c-^>
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
@@ -41,7 +41,6 @@ nnoremap <Down> :echoe "Use j"<CR>
 let g:spf13_no_autochdir = 1
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
-map <D-n> :NERDtree<CR>
 
 :nmap <F1> :echo<CR>
 :im <F1> ap<Cp#-o>:echo<CR>
