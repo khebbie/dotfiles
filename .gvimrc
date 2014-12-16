@@ -4,3 +4,7 @@ if has("gui_macvim")
   nnoremap <D-p> :CtrlP<CR>
   nnoremap <D-n> :NERDTree<CR>
 endif
+
+
+set lines=999 columns=9999
+set guifont=Inconsolata\ for\ Powerline:h18
