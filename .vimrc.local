@@ -44,3 +44,5 @@ let g:vimclojure#ParenRainbow = 1
 
 :nmap <F1> :echo<CR>
 :im <F1> ap<Cp#-o>:echo<CR>
+# http://vim.wikia.com/wiki/To_switch_back_to_normal_mode_automatically_after_inaction
+au CursorHoldI * stopinsert
