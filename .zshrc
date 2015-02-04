@@ -6,7 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="bureau"
-export EDITOR='subl -w'
+export EDITOR='git'
 SHELL=zsh
 
 # Base16 Shell
@@ -102,9 +102,3 @@ g() {
 # Complete g like git
 compdef g=git
 
-#boot2docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/khebbie/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
-$(boot2docker shellinit)
