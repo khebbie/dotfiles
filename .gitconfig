@@ -36,11 +36,11 @@
 [diff]
     tool = p4merge
 [difftool "p4merge"]
-    cmd = "p4merge.exe $LOCAL $REMOTE"
+    cmd = "p4merge.sh $LOCAL $REMOTE"
 [merge]
     tool = p4merge
 [mergetool "p4merge"]
-    cmd = "p4merge.exe $BASE $LOCAL $REMOTE $MERGED"
+    cmd = "p4merge.sh $BASE $LOCAL $REMOTE $MERGED"
     trustExitCode = true
     keepBackup = false
 [core]
